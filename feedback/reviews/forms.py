@@ -21,3 +21,17 @@ class ReviewForm(forms.ModelForm):
         fields = '__all__' 
         #can exclude all used with __all__
         exclude = ['owner_comment']
+        #labels are used to maps the models to label values
+        labels = {
+            "user_name":" Your Name",
+            "review_text": "Your feedback",
+            "Rating": "Your Rating"
+        }
+        error_message = {
+            "user_name":{
+                "required":"Your Name must be added",
+                "max_length": "can't be longer than 100",
+                
+
+            }
+        }
