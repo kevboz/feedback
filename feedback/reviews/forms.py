@@ -18,9 +18,9 @@ class ReviewForm(forms.ModelForm):
         #possible where you have a model that you don't need them all rendered in a field
         fields = ['user_name', 'review_text', 'rating'] # list of fields to be included
         #if you want all fields use. this doesn't include ID
-        fields = '__all__' 
+        #fields = '__all__' 
         #can exclude all used with __all__
-        exclude = ['owner_comment']
+        #exclude = ['owner_comment']
         #labels are used to maps the models to label values
         labels = {
             "user_name":" Your Name",
